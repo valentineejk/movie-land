@@ -21,7 +21,7 @@ const App = () => {
     setMovies(data.Search);
   };
 
-  const Api_Call = "http://www.omdbapi.com/?apikey=4e49d2e1";
+  const Api_Call = "http://www.omdbapi.com?apikey=4e49d2e1";
 
   useEffect(() => {
     searchMovies("movies");

@@ -24,7 +24,7 @@ const App = () => {
   const Api_Call = "http://www.omdbapi.com/?apikey=4e49d2e1";
 
   useEffect(() => {
-    searchMovies("ironman");
+    searchMovies("");
   }, []);
 
   return (

@@ -24,7 +24,7 @@ const App = () => {
   const Api_Call = "http://www.omdbapi.com/?apikey=4e49d2e1";
 
   useEffect(() => {
-    searchMovies("");
+    searchMovies("movies");
   }, []);
 
   return (
@@ -48,8 +48,8 @@ const App = () => {
 
       {movies?.length > 0 ? (
         <div className="container">
-          {movies.map((movie: any) => (
-            <MovieCard movie={movie} />
+          {movies.map((movie: any, i) => (
+            <MovieCard movie={movie} key={i} />
           ))}
         </div>
       ) : (
